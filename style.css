@@ -207,15 +207,29 @@ footer {
 
 .sobre-mi-content .foto-container {
     flex: 2;
-    max-width: 300px;
+    width: 100%;
+    max-width: 420px;
+    min-width: 280px;
 }
 
 .foto-placeholder {
+    position: relative;
     width: 100%;
     padding-top: 100%; /* Aspect ratio 1:1 */
     background-color: #112240;
     border: 2px solid var(--color-acento);
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.foto-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .skills-list {
